@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+label {
+  font-family: $font-family;
+  font-size: $font-size-text;
+  font-weight: $font-weight-regular;
+  margin-bottom: 2px;
+  display: block;
+}
+
+input {
+  font-family: $font-family;
+  padding: $padding;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: $border-color-focus;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}

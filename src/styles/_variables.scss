@@ -1,0 +1,44 @@
+// Colores
+$primary-color: #0056d6; // Color azul principal
+$secondary-color: #fff; // Blanco
+$text-color: #000; // Texto principal
+$error-color: #ff0000; // Color para errores
+$title-color-primary: $primary-color; // Color del h1
+$title-color-secondary: $text-color; // Color para h2 - h6
+
+// Tipografía
+$font-family: 'Inter', sans-serif; // Fuente base
+$font-weight-regular: 400; // Peso normal
+$font-weight-bold: 600; // Peso bold
+
+// Tamaños de los títulos
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+$font-size-text: 16px; // Tamaño base del texto
+
+// Dimensiones
+$padding-general: 30px; // Padding del body
+$column-gap: 40px; // Gap entre componentes padre
+$components-gap: 20px; // Gap entre componentes hijos
+$border-radius: 10px; // Bordes redondeados
+$padding: 10px; // botones e input
+
+// Botones
+$button-primary-bg: #0056d6; // Fondo del botón principal
+$button-primary-text-color: #ffffff; // Color del texto
+$button-secondary-border-color: #dcdcdc; // Color del borde secundario
+$button-secondary-border: 1px solid $button-secondary-border-color; // Borde secundario
+$button-secondary-bg: transparent; // Fondo de botones secundarios
+$button-secondary-text-color: #000000; // Color del texto secundario
+$button-icon-size: 20px; // Tamaño del ícono
+$button-icon-margin-right: 8px; // Espaciado entre ícono y texto
+
+
+// Inputs
+$placeholder-color: #888888; // Texto de placeholder
+$border-color: #dcdcdc; // Bordes de los inputs
+$border-color-focus: $primary-color; // Bordes de los inputs hover

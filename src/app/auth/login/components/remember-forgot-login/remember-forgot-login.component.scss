@@ -1,0 +1,11 @@
+@import '../../../../../styles/variables';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  app-anchor-link {
+    color: $primary-color;
+  }
+}

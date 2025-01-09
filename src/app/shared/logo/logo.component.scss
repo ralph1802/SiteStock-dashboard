@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+
+.logo {
+display: flex;
+align-items: center;
+gap: 3px;
+}
+
+span {
+  font-size: $font-size-h4;
+  font-weight: $font-weight-bold;
+}
+
+.stock {
+  color: $primary-color;
+}
+
+

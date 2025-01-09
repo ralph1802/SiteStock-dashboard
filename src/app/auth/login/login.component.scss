@@ -1,0 +1,43 @@
+@import '../../../styles/variables';
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 2 * $padding-general);
+  box-sizing: border-box;
+  gap: $column-gap;
+  overflow: hidden;
+}
+
+.form {
+  width: 540px;
+  padding: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: $column-gap;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.image-container {
+  flex-grow: 1;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: $border-radius;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+img {
+  border-radius: $border-radius;
+}

@@ -1,0 +1,18 @@
+<div class="buttons-container">
+  <app-login-button
+    type="primary"
+    label="Log in"
+    icon=""
+    (action)="onPrimaryButtonClick()"
+  ></app-login-button>
+  <app-login-button
+    type="secondary"
+    label="Log in with Google"
+    icon="../icons/icon_google.svg"
+    (action)="onSecondaryButtonClick()"
+  ></app-login-button>
+  <span>
+    Not registered yet?
+    <app-anchor-link [text]="'Create a new account'" [href]="'/create-account'"></app-anchor-link>
+  </span>
+</div>
