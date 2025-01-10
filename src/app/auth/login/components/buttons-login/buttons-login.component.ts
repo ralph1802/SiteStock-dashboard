@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ButtonComponent } from '../../../../shared/button/button.component';
 import { AnchorLinkComponent } from '../../../../shared/anchor-link/anchor-link.component';
 
@@ -7,16 +7,17 @@ import { AnchorLinkComponent } from '../../../../shared/anchor-link/anchor-link.
   standalone: true,
   imports: [ButtonComponent, AnchorLinkComponent],
   templateUrl: './buttons-login.component.html',
-  styleUrls: ['./buttons-login.component.scss']
+  styleUrls: ['./buttons-login.component.scss'],
 })
 export class ButtonsLoginComponent {
-  onPrimaryButtonClick() {
-    console.log('Primary button clicked');
+  @Output() primaryAction = new EventEmitter<void>();
+  @Output() secondaryAction = new EventEmitter<void>();
 
+  onPrimaryButtonClick() {
+    this.primaryAction.emit();
   }
 
   onSecondaryButtonClick() {
-    console.log('Secondary button clicked');
-
+    this.secondaryAction.emit();
   }
 }

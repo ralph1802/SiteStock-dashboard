@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormInputComponent } from '../../../../shared/form-input/form-input.component';
 
 @Component({
@@ -6,9 +6,21 @@ import { FormInputComponent } from '../../../../shared/form-input/form-input.com
   standalone: true,
   imports: [FormInputComponent],
   templateUrl: './forms-login.component.html',
-  styleUrl: './forms-login.component.scss'
+  styleUrls: ['./forms-login.component.scss']
 })
 export class FormsLoginComponent {
-  email: string = '';
-  password: string = '';
+  @Input() email: string = '';
+  @Input() password: string = '';
+  @Output() emailChange = new EventEmitter<string>();
+  @Output() passwordChange = new EventEmitter<string>();
+
+  onEmailChange(value: string) {
+    this.email = value;
+    this.emailChange.emit(value);
+  }
+
+  onPasswordChange(value: string) {
+    this.password = value;
+    this.passwordChange.emit(value);
+  }
 }

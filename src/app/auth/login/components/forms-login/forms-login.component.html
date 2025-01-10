@@ -1,17 +1,19 @@
 <div class="container">
   <form class="form">
     <app-form-input
+      [id]="'email-input'"
       [type]="'email'"
-      [placeholder]="''"
       [label]="'Email'"
-      [(value)]="email"
+      [value]="email"
+      (valueChange)="onEmailChange($event)"
     ></app-form-input>
 
     <app-form-input
+      [id]="'password-input'"
       [type]="'password'"
-      [placeholder]="''"
       [label]="'Password'"
-      [(value)]="password"
+      [value]="password"
+      (valueChange)="onPasswordChange($event)"
     ></app-form-input>
   </form>
 </div>

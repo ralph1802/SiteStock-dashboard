@@ -1,11 +1,14 @@
 <div class="login">
   <div class="form">
     <app-logo-login></app-logo-login>
-    <app-forms-login></app-forms-login>
+    <app-forms-login [(email)]="email" [(password)]="password"></app-forms-login>
     <app-remember-forgot-login></app-remember-forgot-login>
-    <app-buttons-login></app-buttons-login>
+    <app-buttons-login (primaryAction)="handleLogin()"></app-buttons-login>
+    <div *ngIf="errorMessage" class="error show">
+      <app-login-error-message [errorMessage]="errorMessage"></app-login-error-message>
+    </div>
   </div>
   <div class="image-container">
-    <img src="images/img-auth.svg" alt="" class="image">
+    <img src="images/img-auth.svg" alt="" class="image" />
   </div>
 </div>

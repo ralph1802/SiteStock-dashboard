@@ -11,6 +11,7 @@
 }
 
 .form {
+  position: relative;
   width: 540px;
   padding: 72px;
   display: flex;
@@ -41,3 +42,20 @@
 img {
   border-radius: $border-radius;
 }
+
+.error {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: none;
+}
+
+.error.show {
+  display: block;
+}
+
+
+
